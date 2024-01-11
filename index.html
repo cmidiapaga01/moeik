@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9SWNVC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/fav.svg" type="image/svg">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+    <title>Moe Ikeda</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9SWNVC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">.Moe</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="assets/img/usa.png" alt="English" class="flag-icon">
+                    <span id="activeLanguageBtn">English</span>
+                </button>
+                <i class="bx bx-chevron-down"></i>
+                <div class="dropdown-content">
+                    <a onclick="changeLanguage('en')">
+                        <img src="assets/img/usa.png" alt="English" class="flag-icon">
+                        English
+                    </a>
+                    <a onclick="changeLanguage('pt')">
+                        <img src="assets/img/brazil.png" alt="Português" class="flag-icon">
+                        Portuguese
+                    </a>
+                    <a onclick="changeLanguage('de')">
+                        <img src="assets/img/germany.png" alt="Deutsch" class="flag-icon">
+                        Deutsch
+                    </a>
+                    <a onclick="changeLanguage('jp')">
+                        <img src="assets/img/japan.png" alt="Nihon" class="flag-icon">
+                        「日本語」
+                    </a>
+                    <a onclick="changeLanguage('es')">
+                        <img src="assets/img/spain.png" alt="Español" class="flag-icon">
+                        Spanish
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting" id = "t1">Hello, I'm</span>
+                    <h1 class="home__name" id = "t2">Moe Ikeda</h1>
+                    <h3 class="home__education" id = "t3">Frontend Engineer/ Web Design</h3>
+
+                    <div class="home__buttons">
+                        <!-- <a download="" href="assets/pdf/resume.pdf" class="button button--ghost" id="cv">Download CV</a> -->
+                        <a href="#about" class="button btn-light" id = "t4">About Me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/cat.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://github.com/cmidiapaga01" target="_blank" class="home__social-link"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/theo-bucaretchi-b645b7268/" target="_blank" class="home__social-link"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.instagram.com/theo_buca/" target="_blank" class="home__social-link"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle" id="t6">My Intro</span>
+            <h2 class="section__title" id="t7">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/moedinha.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title" id="t8">Experience</h3>
+                            <span class="about__subtitle" id="t9">Fresher</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title" id="t10">Completed</h3>
+                            <span class="about__subtitle" id="t11">5+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title" id="t12">Support</h3>
+                            <span class="about__subtitle" id="t13">24/7 Online</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description" id="t14">
+                        The success of an e-commerce relies on 2 pillars: Showcase and store (ads and website).
+                         I create strategies to find the best target audience and I ensure a seamless checkout.
+                         Intuitive design, attractive layout, and interactive functionalities are the key to success.
+                          Analytics is any e-commerce manager best friend :D
+                    </p>
+
+                    <a href="#contact" class="button btn-light" id="t15">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle" id="t16">My Abilities</span>
+            <h2 class="section__title" id="t17">Experiences</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title" id="t31">Paid/Organic Traffic</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t32">Google Ads</h3>
+                                    <span class="skills__level" id="t33">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t34">Google Analytics</h3>
+                                    <span class="skills__level" id="t35">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t36">META Ads</h3>
+                                    <span class="skills__level" id="t37">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t38">Organic</h3>
+                                    <span class="skills__level" id="t39">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t40">IA</h3>
+                                    <span class="skills__level" id="t41">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title" id="t18">Frontend developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t19">HTML</h3>
+                                    <span class="skills__level" id="t20">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t21">CSS</h3>
+                                    <span class="skills__level" id="t22">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t23">JavaScript</h3>
+                                    <span class="skills__level" id="t24">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t25">Bootstrap</h3>
+                                    <span class="skills__level" id="t26">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t27">Git</h3>
+                                    <span class="skills__level" id="t28">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name" id="t29">React</h3>
+                                    <span class="skills__level" id="t30">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle" id="t42">My Services</span>
+            <h2 class="section__title" id="t43">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <i class='bx bxs-megaphone serv__icon'></i>
+
+                    <h3 class="services__title" id="t62">Design <br></h3>
+
+                    <span class="services__button">Read More <i class='bx bx-right-arrow-alt services__icon'></i></span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title" id="t63">Visual Designer</h3>
+                            <p class="services__modal-description" id="t64">
+                                I make designs for a variety of platforms, which may include websites, games, movies,
+                                kiosks, and wearables.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t65">
+                                        Establish the look and feel for various interfaces.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t66">
+                                        Design logos, icons, and infographics.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t67">
+                                        Resize assets for different devices.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t68">
+                                        Work with a component library.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t69">
+                                        Design mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <i class='bx bx-code serv__icon'></i>
+
+                    <h3 class="services__title" id="t44">Frontend <br> Development</h3>
+
+                    <span class="services__button" id="t45">
+                        Read More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title" id="t46">Frontend Developer</h3>
+                            <p class="services__modal-description" id="t47">
+                                I architect and develop websites and applications using web technologies like HTML,
+                                CSS, DOM, and JavaScript.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t48">
+                                        I develop the web pages.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t49">
+                                        I add interactivity to web pages.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t50">
+                                        Implementing design on mobile websites.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t51">
+                                        Optimized web experiences.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info" id="t52">
+                                        Developing and maintaining user experience.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle" id="t70">My Job</span>
+            <h2 class="section__title" id="t71">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all" id="t72">All</span>
+                <span class="work__item" data-filter=".web">Dev</span>
+                <span class="work__item" data-filter=".mobile">Design</span>
+                <!-- <span class="work__item" data-filter=".design">Ads</span> -->
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/solar.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">ADD LATER</h3>
+
+                    <a href="https://mitistrading.com/" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work4.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BANNER</h3>
+
+                    <a href="  https://crowdworks.jp/public/jobs/9969049" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work5.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BANNER</h3>
+
+                    <a href="https://crowdworks.jp/public/jobs/9990750" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work6.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BUSINESS CARD</h3>
+
+                    <a href="https://crowdworks.jp/public/jobs/9429723" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work7.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BUSINESS CARD</h3>
+
+                    <a href="https://crowdworks.jp/public/jobs/9429723" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work8.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BUSINESS CARD</h3>
+
+                    <a href="https://crowdworks.jp/public/jobs/9429723" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work9.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BUSINESS CARD</h3>
+
+                    <a href="https://crowdworks.jp/public/jobs/9429723" target="_blank" class="work__button">
+                        Experience <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle" id="t73">My Clients Say</span>
+            <h2 class="section__title" id="t74">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">John Doe</h3>
+                        <p class="testimonial__description">
+                            Your designs have transformed our website,
+                            making it visually appealing and user-friendly.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Pula Vusy</h3>
+                        <p class="testimonial__description">
+                            The attention to detail in your UI/UX work has
+                            greatly enhanced our app's usability and overall user experience.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Sara Cill</h3>
+                        <p class="testimonial__description">
+                            Your expertise in frontend shines
+                            through in the seamless functionality and responsiveness of our website.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle" id = "t75">Get in touch</span>
+            <h2 class="section__title" id = "t76">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title" id = "t77">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">cmidiapaga@gmail.com</span>
+
+                            <a href="mailto:cmidiapaga01@gmail.com" target="_blank" class="contact__button" id = "t78">
+                                Write Me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+5517981646780</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=5517981646780&text=Hello, Theo!
+                                " target="_blank" class="contact__button" id = "t79">
+                                Write Me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <!-- <div class="contact__card">
+                            <i class='bx bxl-messenger contact__card-icon'></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Theo Bucaretchi</span>
+
+                            <a href="https://m.me/
+                                " target="_blank" class="contact__button" id = "t80">
+                                Write Me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="contact__content">
+                    <h3 class="contact__title" id = "t81">Write me your project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag" id = "t82">Name</label>
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" placeholder="Insert your email" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Insert your message"
+                                class="contact__form-input"></textarea>
+                        </div>
+                        <button id = "t83" class="button btn-light" disabled>Send Message</button>
+                    </form>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">.Moe</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link" id = "t84">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link" id = "t85">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonial" class="footer__link" id = "t86">Testimonials</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://github.com/cmidiapaga01" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/theo-bucaretchi-b645b7268/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://www.instagram.com/theo_buca/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Moe. All rights reserved. Made in 2023
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
